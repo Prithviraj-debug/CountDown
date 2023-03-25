@@ -1,6 +1,9 @@
+const countDate = new Date("March 28, 2023 00:00:00").getTime();
+var now;
+const btn = document.querySelector('.surprise')
+
 const countdown = () => {
-    const countDate = new Date("July 13, 2023 00:00:00").getTime();
-    const now = new Date().getTime();
+    now = new Date().getTime();
     const gap = countDate - now;
 
     //Time works
@@ -23,5 +26,17 @@ const countdown = () => {
 
     // console.log(gap);
 };
+
+btn.addEventListener("click", () => {
+    if (now >= countDate) {
+        alert("yayy!!")
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Thamb ki laudya...',
+            text: 'Ajun Birthday ny ala!',
+          })
+    }
+})
 
 setInterval(countdown, 1000);

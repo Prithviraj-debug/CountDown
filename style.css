@@ -76,6 +76,23 @@ img {
     animation-timing-function: ease-in;
 }
 
+.coming-soon .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.surprise {
+    border: none;
+    background-color: #6C63FF;
+    font-size: 20px;
+    width: 60%;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
 .container {
     padding: 8px;
 }
